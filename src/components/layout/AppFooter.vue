@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Heart } from '@lucide/vue'
 import IconLink from '../ui/IconLink.vue'
 
 const socialLinks = [
@@ -98,12 +97,6 @@ const currentYear = new Date().getFullYear()
   display: flex;
   align-items: center;
   gap: var(--space-1);
-}
-
-.footer__heart {
-  color: var(--accent-warm);
-  display: inline-block;
-  flex-shrink: 0;
 }
 
 @media (max-width: 640px) {

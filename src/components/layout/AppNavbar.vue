@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { Menu, X } from '@lucide/vue'
 import ThemeToggle from '../ui/ThemeToggle.vue'
 import { useActiveSection } from '../../composables/useActiveSection'

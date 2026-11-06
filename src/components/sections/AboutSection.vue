@@ -2,7 +2,7 @@
 import SectionHeading from '../ui/SectionHeading.vue'
 import { useSectionReveal } from '../../composables/useSectionReveal'
 
-const { sectionRef, isVisible } = useSectionReveal()
+const { isVisible } = useSectionReveal()
 </script>
 
 <template>

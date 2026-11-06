@@ -5,7 +5,7 @@ import IconLink from '../ui/IconLink.vue'
 import BaseButton from '../ui/BaseButton.vue'
 import { useSectionReveal } from '../../composables/useSectionReveal'
 
-const { sectionRef, isVisible } = useSectionReveal()
+const { isVisible } = useSectionReveal()
 
 const links = [
   { icon: 'github', href: 'https://github.com/AlinaMollinedo', label: 'GitHub' },
