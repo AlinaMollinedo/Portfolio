@@ -1,0 +1,224 @@
+/* ============================================
+   Design Tokens — Portfolio Design System
+   ============================================ */
+
+:root {
+  /* ── Brand Colors ── */
+  --color-carbon-black: #262626;
+  --color-seashell: #FFF8F2;
+  --color-jungle-teal: #5B8E7D;
+
+  /* ── Supporting Palette ── */
+  --color-soft-turquoise: #71C9C3;
+  --color-deep-teal: #356B66;
+  --color-muted-lavender: #B7A6C9;
+  --color-dusty-rose: #D99A9B;
+  --color-soft-sage: #C8D8C0;
+  --color-warm-sand: #E9D8C8;
+
+  /* ── Neutral Scale ── */
+  --color-neutral-50: #FAFAF9;
+  --color-neutral-100: #F5F5F4;
+  --color-neutral-200: #E7E5E4;
+  --color-neutral-300: #D6D3D1;
+  --color-neutral-400: #A8A29E;
+  --color-neutral-500: #78716C;
+  --color-neutral-600: #57534E;
+  --color-neutral-700: #44403C;
+  --color-neutral-800: #332E2B;
+  --color-neutral-900: #292524;
+
+  /* ── Typography ── */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+  --tracking-widest: 0.14em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ── Spacing Scale ── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-40: 10rem;
+
+  /* ── Layout ── */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-2xl: 1400px;
+  --content-width: 72rem;
+  --content-narrow: 48rem;
+
+  /* ── Borders & Radii ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  --border-width: 1px;
+  --border-width-2: 2px;
+
+  /* ── Shadows ── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.08), 0 8px 10px rgba(0, 0, 0, 0.04);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-theme: 350ms ease;
+
+  /* ── Z-Index Scale ── */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+
+/* ── Light Theme (Default) ── */
+[data-theme='light'],
+:root {
+  --bg-primary: var(--color-seashell);
+  --bg-secondary: #F5EDE4;
+  --bg-tertiary: var(--color-warm-sand);
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-muted: var(--color-soft-sage);
+  --bg-accent: var(--color-jungle-teal);
+
+  --text-primary: var(--color-carbon-black);
+  --text-secondary: #57534E;
+  --text-tertiary: #78716C;
+  --text-inverse: var(--color-seashell);
+  --text-accent: var(--color-jungle-teal);
+  --text-on-accent: #FFFFFF;
+
+  --border-primary: var(--color-warm-sand);
+  --border-secondary: #E7E5E4;
+  --border-subtle: rgba(38, 38, 38, 0.08);
+  --border-accent: var(--color-jungle-teal);
+
+  --accent-primary: var(--color-jungle-teal);
+  --accent-primary-hover: var(--color-deep-teal);
+  --accent-secondary: var(--color-soft-turquoise);
+  --accent-tertiary: var(--color-muted-lavender);
+  --accent-warm: var(--color-dusty-rose);
+
+  --interactive-hover: rgba(91, 142, 125, 0.08);
+  --interactive-active: rgba(91, 142, 125, 0.12);
+
+  --shadow-color: rgba(38, 38, 38, 0.08);
+  --overlay: rgba(38, 38, 38, 0.4);
+
+  --nav-bg: rgba(255, 248, 242, 0.85);
+  --nav-border: rgba(233, 216, 200, 0.6);
+
+  --tag-bg: rgba(91, 142, 125, 0.1);
+  --tag-text: var(--color-deep-teal);
+  --tag-border: rgba(91, 142, 125, 0.2);
+
+  --code-bg: rgba(38, 38, 38, 0.05);
+  --code-text: var(--color-deep-teal);
+}
+
+/* ── Dark Theme ── */
+[data-theme='dark'] {
+  --bg-primary: var(--color-carbon-black);
+  --bg-secondary: #2E2E2E;
+  --bg-tertiary: #363636;
+  --bg-surface: #313131;
+  --bg-surface-elevated: #3A3A3A;
+  --bg-muted: #333333;
+  --bg-accent: var(--color-jungle-teal);
+
+  --text-primary: var(--color-seashell);
+  --text-secondary: #C8C2BC;
+  --text-tertiary: #9A948F;
+  --text-inverse: var(--color-carbon-black);
+  --text-accent: var(--color-soft-turquoise);
+  --text-on-accent: #FFFFFF;
+
+  --border-primary: #424242;
+  --border-secondary: #383838;
+  --border-subtle: rgba(255, 248, 242, 0.06);
+  --border-accent: var(--color-jungle-teal);
+
+  --accent-primary: var(--color-jungle-teal);
+  --accent-primary-hover: #6FA08E;
+  --accent-secondary: var(--color-soft-turquoise);
+  --accent-tertiary: var(--color-muted-lavender);
+  --accent-warm: var(--color-dusty-rose);
+
+  --interactive-hover: rgba(113, 201, 195, 0.1);
+  --interactive-active: rgba(113, 201, 195, 0.15);
+
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --overlay: rgba(0, 0, 0, 0.6);
+
+  --nav-bg: rgba(38, 38, 38, 0.9);
+  --nav-border: rgba(66, 66, 66, 0.6);
+
+  --tag-bg: rgba(91, 142, 125, 0.15);
+  --tag-text: var(--color-soft-turquoise);
+  --tag-border: rgba(91, 142, 125, 0.25);
+
+  --code-bg: rgba(255, 248, 242, 0.06);
+  --code-text: var(--color-soft-turquoise);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.14), 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Responsive Breakpoints (used in media queries) ──
+   Mobile:  < 640px
+   Tablet:  640px – 1023px
+   Laptop:  1024px – 1279px
+   Desktop: 1280px+
+   Wide:    1440px+
+*/
